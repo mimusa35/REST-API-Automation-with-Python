@@ -1,2 +1,10 @@
-# REST-API-Automation-with-Python
-This project uses Python's requests library for REST API interactions and provides basic examples for automating GET, PUT, POST, and DELETE requests to verify API behavior.
+## REST API Automation with Python
+This project provides a basic structure for automating REST API testing using Python's `requests` library. It includes test cases for common HTTP methods like GET, PUT, POST, and DELETE.
+
+## Features
+- Structured project directory.
+- Reusable configurations for base URL and headers.
+
+## Requirements
+- Python 3.7+
+- `requests` library
