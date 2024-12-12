@@ -10,9 +10,7 @@ and performance metrics (response time).
 To set up the environment for running the tests, follow these steps:
 
 1. **Install Python**:
-   Ensure Python 3.12 or later is installed. Version 3.12.6 is used in this project. You can download it from [python.org](https://www.python.org/downloads/).
-
-   To check the Python version, use the following command:
+   Ensure Python 3.12 or later is installed. Version 3.12.6 is used in this project. You can download it from [python.org](https://www.python.org/downloads/). To check the Python version, use the following command:
      ```bash
      python --version
      ```
@@ -65,49 +63,49 @@ The following scenarios are covered for the **/todos** endpoint:
 **GET Requests**
 1. GET /todos:
 
--Validate that the API returns a list of todos.
--Verify the response structure includes **userId**, **id**, **title**, and **completed** for each todo item.
--Validate the response time is under 500ms.
+- Validate that the API returns a list of todos.
+- Verify the response structure includes **userId**, **id**, **title**, and **completed** for each todo item.
+- Validate the response time is under 500ms.
 
 2. GET /todos/{id} (Valid):
 
--Verify that the API returns the correct to-do item by ID.
--Validate the response status is **200 OK**.
+- Verify that the API returns the correct to-do item by ID.
+- Validate the response status is **200 OK**.
 
 3. GET /todos/{id} (Invalid):
 
--Verify that a non-existent resource returns a **404 Not Found** status.
+- Verify that a non-existent resource returns a **404 Not Found** status.
 
 **POST Requests**
 1. POST /todos (Valid):
 
--Validate that a new to-do item is created with the correct data.
--Verify the response status is **201 Created**.
+- Validate that a new to-do item is created with the correct data.
+- Verify the response status is **201 Created**.
 
 2. POST /todos (Empty Payload):
 
--Test behavior when sending an empty payload.
--Log any discrepancies due to the mock API.
+- Test behavior when sending an empty payload.
+- Log any discrepancies due to the mock API.
 
 **PUT Requests**
 1. PUT /todos/{id} (Valid):
 
--Validate that an existing to-do item is updated with the correct data.
--Verify the response status is **200 OK**.
+- Validate that an existing to-do item is updated with the correct data.
+- Verify the response status is **200 OK**.
 
 2. PUT /todos/{id} (Invalid):
 
--Verify that updating a non-existent resource returns a **404 Not Found** or appropriate error.
+- Verify that updating a non-existent resource returns a **404 Not Found** or appropriate error.
 
 **DELETE Requests**
 1. DELETE /todos/{id} (Valid):
 
--Validate that an existing to-do item is deleted successfully.
--Verify the response status is **200 OK**.
+- Validate that an existing to-do item is deleted successfully.
+- Verify the response status is **200 OK**.
 
 2. DELETE /todos/{id} (Invalid):
 
--Verify that attempting to delete a non-existent resource returns a **404 Not Found**.
+- Verify that attempting to delete a non-existent resource returns a **404 Not Found**.
 
 ## **Assumptions Made**
 
